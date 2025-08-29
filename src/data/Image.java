@@ -1,20 +1,20 @@
 package data;
 
 public class Image {
-    private double[][] pixels;
+    private double[][] data;
     private int label;
 
 
-    public double [][] getPixels() {
-        return pixels;
+    public double [][] getData() {
+        return data;
     }
 
     public int getLabel() {
         return label;
     }
 
-    public Image(double[][] pixels, int label) {
-        this.pixels = pixels;
+    public Image(double[][] data, int label) {
+        this.data = data;
         this.label = label;
     }
 
@@ -23,9 +23,9 @@ public class Image {
 
         String s = label + "\n";
         
-        for(int i = 0; i < pixels.length; i++){
-            for(int j = 0; j < pixels[0].length; j++){
-                s += pixels[i][j] + ", ";
+        for(int i = 0; i < data.length; i++){
+            for(int j = 0; j < data[0].length; j++){
+                s += data[i][j] + ", ";
             }
             s += "\n";
         }

@@ -34,7 +34,7 @@ public class ConvolutionLayer extends Layer {
                 }
             }
 
-            filters.add(newFilter);
+            genFilters.add(newFilter);
         
         }
         
